@@ -31,6 +31,10 @@ folder, you will need to set up a special password for Box that allows access
 outside of the UIUC Single Sign On.  You can do this by going to "Account
 Settings" and finding "Authentication."
 
+**Be sure to disable notifications from Illinois's Box for the `dxl-git-annex`
+folder!** Otherwise you'll get email notifications all the time.  And they're
+annoying and unnecessary.
+
 ## Getting Set Up
 
 Before you can use this repository to its full advantage, you need to install

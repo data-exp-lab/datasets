@@ -90,6 +90,9 @@ git users.  The rules are:
    we're looking at.
  * Any scripts you have that are helpful would be appreciated.
 
+**README files and scripts do not have to be managed by annex**.  They can just
+be managed by regular git.
+
 Once you've created that, you put the data in your directory and use the `git
 annex add` command.  This will add an entry to the annex metadata and it will
 change the file in the current directory from an actual file into a symbolic
@@ -112,6 +115,7 @@ cd mydata
 cp ~/mydata-readme ./README
 cp ~/mydata1.hdf5 .
 cp ~/mydata2.hdf5 .
+git add README
 git annex add mydata1.hdf5 mydata2.hdf5
 git annex copy mydata1.hdf5 mydata2.hdf5 --to box
 git commit

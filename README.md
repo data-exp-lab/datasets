@@ -63,6 +63,16 @@ git annex sync
 
 This will synchronize the state of your repository with the upstream one, making locations of data obvious.
 
+**Note**: `git annex init` defaults to show your machine 
+USER@HOST:/path/to/datasets, which might be
+long and cumbersome. To update the name of the machine you're using, you can
+re-init git annex with:
+
+```
+git annex init `yourmachine`
+git annex sync
+```
+
 ## Getting a Dataset
 
 To obtain a file or dataset, you can execute this command:
